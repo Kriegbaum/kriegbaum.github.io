@@ -3,14 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>uiCookies:Connect &mdash; Free Bootstrap Theme, Free Responsive Bootstrap Website Template</title>
-    <meta name="description" content="Free Bootstrap Theme by uicookies.com">
-    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    <title>Luftwerk - Transition</title>
+    <meta name="description" content="Andy Kauff Project Page">
+    <meta name="keywords" content="get out of here google">
     
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
     <link rel="stylesheet" href="css/styles-merged.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
     <!--[if lt IE 9]>
       <script src="js/vendor/html5shiv.min.js"></script>
@@ -88,10 +90,16 @@
         </div>
 
         <div class="row">
-          <div class="col-md-12 probootstrap-animate">
-            <p><img src="img/transition/project-bottom.jpg" alt="uicookies.com" class="img-responsive"></p>
+            <h2>Images</h2>
+            <div class="gallery">
+                <div><img src="img/transition/1.JPG" class="img-responsive"></div>
+                <div><img src="img/transition/2.JPG" class="img-responsive"></div>
+                <div><img src="img/transition/3.JPG" class="img-responsive"></div>
+                <div><img src="img/transition/4.JPG" class="img-responsive"></div>
+                <div><img src="img/transition/5.JPG" class="img-responsive"></div>
+                <div><img src="img/transition/6.JPG" class="img-responsive"></div>
           </div>
-        </div>
+          </div>
         
 
       </div>
@@ -124,6 +132,18 @@
   <script src="js/scripts.min.js"></script>
   <script src="js/main.min.js"></script>
   <script src="js/custom.js"></script>
+  <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.gallery').slick({
+        dots: true,
+        adaptiveHeight: true,
+        arrows: true
+      });
+    });
+  </script>
 
   </body>
 </html>
