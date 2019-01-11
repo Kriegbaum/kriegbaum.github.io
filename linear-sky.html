@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/styles-merged.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
     <!--[if lt IE 9]>
       <script src="js/vendor/html5shiv.min.js"></script>
@@ -95,14 +97,18 @@
         </div>
 
         <div class="row">
-          <div class="col-md-12 probootstrap-animate">
-            <p><img src="img/linear-sky-bottom.jpg" alt="uicookies.com" class="img-responsive"></p>
+            <h2>Images</h2>
+            <div class="gallery">
+                <div><img src="img/linear-sky/1.JPG" class="img-responsive"></div>
+                <div><img src="img/linear-sky/2.JPG" class="img-responsive"></div>
+                <div><img src="img/linear-sky/3.JPG" class="img-responsive"></div>
+                <div><img src="img/linear-sky/4.JPG" class="img-responsive"></div>
+                <div><img src="img/linear-sky/5.JPG" class="img-responsive"></div>
+                <div><img src="img/linear-sky/6.JPG" class="img-responsive"></div>
           </div>
         </div>
-        
+      </section>
 
-      </div>
-    </section>
     <!-- END section -->
       <section class="probootstrap-section">
           <div class="container">
@@ -131,6 +137,17 @@
   <script src="js/scripts.min.js"></script>
   <script src="js/main.min.js"></script>
   <script src="js/custom.js"></script>
+  <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.gallery').slick({
+        dots: true,
+        adaptiveHeight: true
+      });
+    });
+  </script>
 
   </body>
 </html>
