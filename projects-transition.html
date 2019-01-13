@@ -63,9 +63,12 @@
       <div class="probootstrap-text">
         <div class="probootstrap-inner">
           <h1 class="heading">Transition</h1>
-            <h4>Luftwerk</h4>
-          <h5><br><br>Concept:</h5> 
-            <p>This installation occupies sits on the Rose Kennedy Greenway. The Greenway sits over an underground highway, and the archways and lights on top of them echo the tunnel below. The lights crawl and chase in a pattern that draws visitors through the path.</p>
+            <h5>Luftwerk</h5>
+            <h5>Temporary Public Outdoor Installation</h5>
+          <h6>Concept</h6> 
+            <p>This installation occupies the Rose Kennedy Greenway. The Greenway sits over an underground highway, and the archways and lights on top of them echo the tunnel below. The lights crawl and chase in a pattern that draws visitors through the path.</p>
+            <h6>My Role</h6>
+            <p>When I was brought onto this project, Luftwerk had selected fixtures to use, and the plans for the silver archways were complete. My responibilities included designing the electrical systems, selecting hardware to purchase, and writing the software. Given that this project needed to be waterproof and all the fixtures were line voltage, there was no prefabricated control solution available that matched our needs. I decided to do the wiring myself and write the code from scratch. Working with Luftwerk, we created the full scale installation (without the structre) in the studio and worked out animation character. I kept the code flexible to allow for modifications on site. Once in Boston, I worked with city electricians to install the cabling and fixutres. The final product has an intended lifespan of one year. It has been up since the end of June, and has weathered thunderstorms, high winds, and several freeze-thaw cycles without incident.</p>
         </div>
       </div>
     </section>
@@ -76,16 +79,16 @@
       <div class="container">
         <div class="row mb70 probootstrap-animate" data-animate-effect="fadeIn">
           <div class="col-md-6">
-            <h2>Technical Design</h2>
+            <h2>Technical Details</h2>
             <p>This project runs on a small local network of three Raspberry Pis. Each is attached to a relay board, which supplies and cuts line voltage to the lights. Everything terminates into three control boxes, located at the natural junctions in the arch structures.</p>
             <p>The code for network commands and relay control is all written in Python. Commands travel via TCP/IP over cat6 cable run along the arch structure.</p>
               <h2>Credits</h2>
-            <p>Photography: Luftwerk and Andy Kauff <br> Commissioned by: Rose Kennedy Greenway <br> and the Boston Cultural Council <br> Design: Luftwerk</p>
+            <p>Visual Design: Luftwerk <br> Technical Design: Andy Kauff <br> Photography: Luftwerk and Andy Kauff <br> Commissioned by: Rose Kennedy Greenway <br> and the Boston Cultural Council</p>
               </div>
           <div class="col-md-6">
             <h2>Challenges</h2>
             <p>This installation is outside and in a public area, and involved nearly all line voltage wiring. With that in mind, safety and durability were top priorities. The installation had to be completely weather and vandal proof. IP68 connectors were used for all lighting fixtures and wiring outside the control boxes. The fixtures themselves were designed to be used in automated carwash facilities. Control boxes were rugged, waterproof, and had heavy duty locks on them.</p>
-              <p>In order to keep wiring clean inside the control boxes, we used plastic pegboards and zipties that were easy to remove as a unit and service. City electricians supplied a power input to each box, and cables ran down the arches to terminate at the other end.</p>
+              <p>In order to keep wiring clean inside the control boxes, we used plastic pegboards that were easy to remove as a unit and service. Stability in both the code and the wiring was one of my largest concerns in this project. Any problems with the code could not be troubleshot offsite, as remote access was not an option, and Boston is a long way from home. I ran the system through a series of stress tests in the studio, allowing for situations where pieces of the installation went offline, experienced electrical faults, intermittent power issues, and physical shock. There are no moving parts in the installation, and spare pre-programmed units were left on site, to be swapped out in the event of a failure.</p>
           </div>
         </div>
 
