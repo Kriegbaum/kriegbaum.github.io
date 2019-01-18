@@ -61,9 +61,9 @@
             <h4>Luftwerk</h4>
             <h5>Permanent Installation</h5>
           <h5><br>Concept:</h5> 
-            <p>This installation occupies the entry corridor into the 21c Hotel in Kansas City. Spanning roughly 40 feet, bars of light are placed facing the viewer. From the entrance of the corridor, the bars all appear to be the same size. As a viewer progresses down the corridor, however, they discover that it is a trick of perspective. <br><br> At random intervals, the installation performs a subtle shift of color pallette. The change is produced organically, sampling its colors from images of the Kansas Sky. The sample source changes every hour in 12 hour cycles, completing a psuedo-daylight cycle.</p>
+            <p>This installation occupies the entry corridor into the 21c Hotel in Kansas City. Spanning roughly 40 feet, bars of light are placed facing the viewer. From the entrance of the corridor, the bars all appear to be the same size. As a viewer progresses down the corridor, however, they discover that it is a trick of perspective. At random intervals, the installation performs a subtle shift of color pallette, creating a simulated daylight cycle.</p>
             <h5>My Role</h5>
-            <p>At my entry into the project, the visual design had been completed. My responsiblities included providing consulatation on hardware selection and wiring architecture, wiring the installation, and programming the controller. I repurposed an architectural controller already owned by the studio to control this installtion. To achieve the visual effects of the installation, I wrote some custom scripts for image processing and fade animations. Working with Luftwerk, I built a full-scale test rig in the studio. We spent several days viewing various options for animation characteristics and color pallettes, and I stress tested the installtion to ensure stability. Once in Kansas City, I helped install the physical components and executed the wiring plan for the installation.</p>
+            <p>At my entry into the project, the visual design had been completed. My responsiblities included providing consulatation on hardware selection and wiring architecture. I repurposed an architectural controller already owned by the studio to control this installtion. To achieve the visual effects of the installation, I wrote some custom scripts for image processing and fade animations. Working with Luftwerk, I built a full-scale test rig in the studio. We spent several days viewing various options for animation characteristics and color pallettes, and I stress tested the installtion to ensure stability. Once in Kansas City, I helped install the physical components and executed the wiring plan for the installation.</p>
         </div>
       </div>
     </section>
@@ -83,7 +83,7 @@
           <div class="col-md-6">
             <h2>Challenges</h2>
             <p>From a design perspective, this installation doubled as the primary lighting source for the entry corridor. This placed some immediate practical needs that had to be worked into the character of this installation. In addition to the practical needs, the placement of this piece in a corridor informed other aspects of the animation and timing, as guests experience it in a linear way over a limited period of time.</p>
-            <p>Technically, the programming environment in the provided controller imposed some limitations that required some creative workarounds. LUA is fairly bare-bones in nature, and the software for the controller expects to call single scripts in isolation with limited access to the file system. I created a few tools in Python that allowed me to break the images into data that was more usable in this environment.
+            <p>Technically, the programming environment in the provided controller imposed some limitations that required some creative workarounds. Without the ability to load in modules, LUA has a fairly bare feature set. The software for the controller expects to call single scripts in isolation with limited access to the file system. I created a few tools in Python that allowed me to break the images into data that was more usable in this environment.
           </div>
         </div>
 
@@ -91,7 +91,7 @@
             <h2>Images</h2>
             <div class="gallery">
                 <div><img src="img/linear-sky/1.JPG" class="img-responsive"></div>
-                <div><img src="img/linear-sky/2.JPG" class="img-responsive"></div>
+                <div><img src="img/linear-sky/2.GIF" class="img-responsive" hieght="1000" width="1600"></div>
                 <div><img src="img/linear-sky/3.JPG" class="img-responsive"></div>
                 <div><img src="img/linear-sky/4.JPG" class="img-responsive"></div>
                 <div><img src="img/linear-sky/5.JPG" class="img-responsive"></div>
