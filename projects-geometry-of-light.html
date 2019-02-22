@@ -58,12 +58,10 @@
       <div class="probootstrap-text">
         <div class="probootstrap-inner">
           <h1 class="heading">Geometry of Light</h1>
-            <h4>Luftwerk</h4>
+            <h4>Client: Luftwerk</h4>
             <h5>Temporary Installation</h5>
-          <h5><br>Concept:</h5> 
-            <p>This installation took place in the Barcelona Pavillion designed by Mies van der Rohe. Contracting laser levels were used to highlight aspects of the architecture, and moved in sequences</p>
-            <h5>My Role</h5>
-            <p>Luftwerk selected and sourced the lasers. From there, I was responsible for figuring out how to control them and building a system to execute the control patterns. The installation needed to be mostly wireless, as there are not many places to conceal cable in the pavillion. Once onsite, I also needed to create documentation for the installation process to give to the pavillion staff, as the installation was partially struck and restored on a daily basis.</p>
+            <p>Luftwerk's recent project at Mies van der Rohe's iconic Barcelona Pavilion presented the opportunity to experiment with complex spatial ideas while pushing the limits of networked hardware.</p>
+            <p>Luftwerk's vision for the project was based on a set of contracting lasers as the main components, but they needed someone to create a custom system that could orchestrate the lasers to follow a complex pattern. The entire installation needed to operate wirelessly, as the Barcelone Pavilion's unique open plan offered few places to conceal cables. It was also important to provide clear technical documentation for pavilion staff, who would be setting up equipment nightly for the duration of the project.</p>
         </div>
       </div>
     </section>
@@ -73,17 +71,16 @@
     <section class="probootstrap-section">
       <div class="container">
         <div class="row mb70 probootstrap-animate" data-animate-effect="fadeIn">
+        <h2>Technical Design</h2>
           <div class="col-md-6">
-            <h2>Technical Design</h2>
-            <p>The project had a centralized brain located in the basement with a trigger button that allowed the pavillion staff to easily start up the installation at its opening hours. The brain propagated control signals out to the lasers via a small network setup that was placed in the one closed off area in the pavillion.</p>
-            <p>With the inclusion of music, I placed the composer's playback computer on my network, and sent a sync pulse every 5 minutes via OSC, communicating to Qlab, that kept the light show and the music in step with one another.</p>
-              <h2>Credits</h2>
-              <p>Visual Design: Luftwerk and Iker Gil <br> Technical Design: Andy Kauff <br> Photography: Kate Joyce and RedMike Marianek <br> <br> Special Thanks: <br> The Graham Foundation <br> MAS Context <br> Fundacio Mies van der Rohe Barcelona <br> Bosch Tools <br> Spirit of Space</p>
+            <p><b>Pushing the limits of consumer-use hardware</b> <br> The contracting lasers could be controlled via a smartphone app, but it was not capable of precise timing or distributed control. By reverse engineering the bluetooth protocol used by the laser, I was able to take control of each device from an arbitrary bluetooth source.</p>
+            <p> <b>Adding stability to a bluetooth network</b> <br> The bluetooth low energy control platform was not up to the distances spanned by the installation. I added a secondary network of transponders built on battery powered <a href="http://luftwerk.net/projects/">Rasperry Pi Zeroes</a> to increase the effective broadcast range of the control signal and add overall reliability to the system</p>
           </div>
+            
           <div class="col-md-6">
-            <h2>Challenges</h2>
-            <p>There were many layers of technical challenges in this project. The first barrier to controlling the lasers was that the only available control platform was a smartphone app that operated over bluetooth. By reverse engineering the bluetooth protocol for the laser, I was able to take control of the device from an arbitrary bluetooth soruce. <br> From there, the limitations of bluetooth as a control platform was my primary problem. There were 13 bluetooth devices in the field needing control. Most bluetooth devices do not support this many concurrent connections, but more importantly, the broadcast range and reliablility were not good enough for a site this size with heavy foot traffic. In order to ensure stability in the control system, I created a network of transponders with raspberry pi zeroes. The control signals completed most of their journey through space via a long range wifi access point to the transponders, and then made the final leg of the journey over bluetooth. Transponders were never placed more than 5 feet from their receiving bluetooth units.</p>
-          <p>The preceeding design choices made this project into a specialized system, which I was not able to be on site to support once it opened. For that reason, I created a bridge between the wifi broadcasting out of the pavillion's bookstore and my isolated network that allowed me remote access to the site in case support was required once I had left. </p>
+            <p><b>Building in systems for support</b> <br> Geometry of Light was designed as a highly specialized system, but I wasn't available to provide onsite support once it opened. To be able to quickly resolve any future issues with the technical architecture, I created a bridge between the pavilion's wifi and my isolated network that allowed me remote access to the site in case support was required once I had left.</p>
+            <p><b>Incorporating elements on-the-fly</b> <br> Geometry of Light featured a musical composition created for the installation, but we had just a brief window to coordinate the music once onsite. I was able to integrate the composer's playback computer with my network, and used <a href="http://luftwerk.net/projects/">Qlab</a> to keep the light show and music in step with one another.</p>
+            <p><b>Centralized Control</b> <br> I designed the project to have a centralized brain located in the basement, which propagated control signals out to the lasers via a small network setup. A trigger button allowed the pavilion staff to easily start up the installation at its opening hours.</p>
           </div>
         </div>
 
@@ -99,10 +96,31 @@
           </div>
           </div>
         </div>
-      </section>
-
-    <!-- END section -->
-      <section class="probootstrap-section">
+        <div class="container">
+            <div class="row mb70 probootstrap-animate" data-animate-effect="fadeIn">
+                <div class="col-md-6">
+                    <h2>Project Team</h2>
+                    <p>Visual Design: Luftwerk and Iker Gil <br>
+                    Technical Design: Andy Kauff <br>
+                    Photography: Kate Joyce and RedMike Marianek <br>
+                    <br> Supported by: <br>
+                    The Graham Foundation <br>
+                    MAS Context <br>
+                    Bosch Tools <br>
+                    Spirit of Space</p>
+                </div>
+                <div class="col-md-6">
+                    <h2>Tech Elements</h2>
+                    <ul>
+                    <li>Bosch Contracting Lasers</li>
+                    <li>Raspberry Pi</li>
+                    <li>Qlab 3</li>
+                    <li>Python 3</li>
+                    <li>Ubiquiti Networking Gear</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
           <div class="container">
           <h1>Links</h1>
           <p><a href="http://www.mascontext.com/events/mas-context-spring-talks-2019/geometry-of-light-barcelona-pavilion/">MAS Context Page</a> <br> <a href="https://miesbcn.com/calendar/geometry-of-light-by-luftwerk-iker-gil/">Mies Foundation Page</a> </p>
@@ -114,7 +132,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <p>&copy; 2017 <a href="https://uicookies.com/">uiCookies:Connect</a>. All Rights Reserved. <br> Web Template Designed &amp; Developed by <a href="https://uicookies.com">uiCookies</a> </a></p>
+          <p>&copy; 2017 <a href="https://uicookies.com/">uiCookies:Connect</a>. All Rights Reserved. <br> Web Template Designed &amp; Developed by <a href="https://uicookies.com">uiCookies</a></p>
         </div>
       </div>
     </div>
