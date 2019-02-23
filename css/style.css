@@ -105,6 +105,7 @@ a.hover-reverse:hover, a.hover-reverse:focus, a.hover-reverse:active {
 .probootstrap-logo {
   float: left;
   color: #ffffff;
+  background-color: black;
   padding-left: 0px;
   font-size: 30px;
   display: block;
