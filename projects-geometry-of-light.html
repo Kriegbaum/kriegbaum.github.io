@@ -73,13 +73,13 @@
         <div class="row mb70 probootstrap-animate" data-animate-effect="fadeIn">
         <h2>Technical Design</h2>
           <div class="col-md-6">
-            <p><b>Pushing the limits of consumer-use hardware</b> <br> The contracting lasers could be controlled via a smartphone app, but it was not capable of precise timing or distributed control. By reverse engineering the bluetooth protocol used by the laser, I was able to take control of each device from an arbitrary bluetooth source.</p>
-            <p> <b>Adding stability to a bluetooth network</b> <br> The bluetooth low energy control platform was not up to the distances spanned by the installation. I added a secondary network of transponders built on battery powered <a href="http://luftwerk.net/projects/">Rasperry Pi Zeroes</a> to increase the effective broadcast range of the control signal and add overall reliability to the system</p>
+            <p><b>Pushing the limits of consumer-use hardware</b> <br> The contracting lasers could be controlled via a smartphone app, but it was not capable of precise timing or distributed control. With the help of a <a href="https://www.aagallag.com">friend</a>, I reverse engineered the bluetooth communication protocol used by the lasers. After that, it was easy to take control of each device from an arbitrary bluetooth source.</p>
+            <p> <b>Adding stability to a bluetooth network</b> <br> The bluetooth low energy control platform was not up to the distances spanned by the installation. I added a secondary network of transponders built on battery powered <a href="https://www.raspberrypi.org/products/raspberry-pi-zero-w/">Rasperry Pi Zeroes</a> to increase the effective broadcast range of the control signal and add overall reliability to the system</p>
           </div>
             
           <div class="col-md-6">
             <p><b>Building in systems for support</b> <br> Geometry of Light was designed as a highly specialized system, but I wasn't available to provide onsite support once it opened. To be able to quickly resolve any future issues with the technical architecture, I created a bridge between the pavilion's wifi and my isolated network that allowed me remote access to the site in case support was required once I had left.</p>
-            <p><b>Incorporating elements on-the-fly</b> <br> Geometry of Light featured a musical composition created for the installation, but we had just a brief window to coordinate the music once onsite. I was able to integrate the composer's playback computer with my network, and used <a href="http://luftwerk.net/projects/">Qlab</a> to keep the light show and music in step with one another.</p>
+            <p><b>Incorporating elements on-the-fly</b> <br> Geometry of Light featured a musical composition created for the installation, but we had just a brief window to coordinate the music once onsite. I was able to integrate the composer's playback computer with my network, and used <a href="https://figure53.com/qlab/">Qlab</a> to keep the light show and music in step with one another.</p>
             <p><b>Centralized Control</b> <br> I designed the project to have a centralized brain located in the basement, which propagated control signals out to the lasers via a small network setup. A trigger button allowed the pavilion staff to easily start up the installation at its opening hours.</p>
           </div>
         </div>
@@ -102,6 +102,8 @@
                     <h2>Project Team</h2>
                     <p>Visual Design: Luftwerk and Iker Gil <br>
                     Technical Design: Andy Kauff <br>
+                    Programming Support: Aaron Gallagher <br>
+                    Composition: Oriol Tarragó <br>
                     Photography: Kate Joyce and RedMike Marianek <br>
                     <br> Supported by: <br>
                     The Graham Foundation <br>
@@ -114,7 +116,7 @@
                     <ul>
                     <li>Bosch Contracting Lasers</li>
                     <li>Raspberry Pi</li>
-                    <li>Qlab 3</li>
+                    <li>Qlab 4</li>
                     <li>Python 3</li>
                     <li>Ubiquiti Networking Gear</li>
                     </ul>
@@ -123,7 +125,7 @@
         </div>
           <div class="container">
           <h1>Links</h1>
-          <p><a href="http://www.mascontext.com/events/mas-context-spring-talks-2019/geometry-of-light-barcelona-pavilion/">MAS Context Page</a> <br> <a href="https://miesbcn.com/calendar/geometry-of-light-by-luftwerk-iker-gil/">Mies Foundation Page</a> </p>
+          <p><a href="http://www.mascontext.com/events/mas-context-spring-talks-2019/geometry-of-light-barcelona-pavilion/">MAS Context Page</a> <br> <a href="https://miesbcn.com/calendar/geometry-of-light-by-luftwerk-iker-gil/">Mies Foundation Page</a> <br> <a href="http://luftwerk.net/projects/geometry-of-light/">Luftwerk Project Page</a></p>
           </div>
       </section>
   </div>
