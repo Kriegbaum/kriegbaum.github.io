@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Luftwerk - Parallel Perspectives</title>
+    <title>Luftwerk - Linear Sky</title>
     <meta name="description" content="Andy Kauff Project Page">
     <meta name="keywords" content="get out of here google">
 
@@ -35,8 +35,8 @@
         <nav role="navigation" class="probootstrap-nav hidden-xs">
           <ul class="probootstrap-main-nav">
             <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="portfolio.html">Installation Art</a></li>
-            <li><a href="portfolio-clothes.html">Clothing Designs</a></li>
+            <li><a href="portfolio.html">Installation Art</a></li>
+            <li class="active"><a href="portfolio-clothes.html">Clothing Designs</a></li>
             <li><a href="resume.html">Resume</a></li>
             <li><a href="about.html">About</a></li>
           </ul>
@@ -54,16 +54,18 @@
   <div class="probootstrap-main">
 
    <section class="probootstrap-section-half probootstrap-no-hover">
-      <div class="probootstrap-image" style="background-image: url(img/parallel-perspectives/project.jpg)"></div>
+      <div class="probootstrap-image" style="background-image: url(img/pilot-jacket/project-page.jpg)"></div>
       <div class="probootstrap-text">
         <div class="probootstrap-inner">
-          <h1 class="heading">Parallel Perspectives</h1>
-            <h5>Luftwerk</h5>
-            <h5>Temporary Museum Piece</h5>
-          <h6>Concept</h6>
-            <p>This installation consisted of a handful of individual works presented as a show at the Elmhurst Art Museum. The visual concepts played with the Mies van der Rohe building it was installed in.</p>
-            <h6>My Role</h6>
-            <p>This project had a few elements that required a customizable simple lighting sequence that would run infinitely. Each area stood by itself, and we were trying to minimize the amount of cable present, and the complication of the install. I built some cheap and simple lighting controllers off of an Arduino platform that was easy to program once on site, it accomplished slow 16-bit color fades. The low cost of this project allowed us to deploy one controller in each room (total of 3) instead of attempting to deploy a central controller, which would have left an unsightly cabling mess. I completed the install of the controller and lighting fixtures, and provided assistance in building the lightboxes.</p>
+          <h1 class="heading">Pilot Jacket</h1>
+          <h5><br>Concept:</h5>
+            <p>This jacket was an attempt to address a common problem with biking
+               in Chicago in early spring/late fall. The weather is always cool
+               enough to require a jacket, but within minutes of getting in motion,
+               you heat up and inevitably need to stop to take it off. By making the
+               torso out of mesh panels, this jacket allows air resistance to cool
+               off your torso while you're in motion, while still giving you some
+               amount of insulation while at rest.
         </div>
       </div>
     </section>
@@ -74,36 +76,32 @@
       <div class="container">
         <div class="row mb70 probootstrap-animate" data-animate-effect="fadeIn">
           <div class="col-md-6">
-            <h2>Technical Details</h2>
-            <p>Each lighting controller was built on an Arduino Uno with a DMX I/O shield. I wrote a routine that would regulate timing and generate DMX frames. The code is called as repeated fade commands, taking an RGB color and a fade time as arguments, allowing us to quickly and easily modify sequences.</p>
-            <p>The light boxes in this project use 16-bit DMX drivers with baked in interpolation. This provided very smooth color fades, which was essential for an installation so heavily focused on color.</p>
-            </div>
-              <div class="col-md-6">
-              <h2>Credits</h2>
-            <p>Visual Design: Luftwerk <br> Technical Design: Andy Kauff <br> Photography: Peter Tsai <br> Hosted by: Elmhurst Art Museum</p>
-              </div>
+            <h2>Materials</h2>
+            <p>Shoulders and hip line are made with heavy twill fabric, so that
+               the places where a backpack, and a bike lock slung over the shouler
+               are durable. The torso panels are polyester breathable mesh, and the
+               details on the collar and left arm are made of seatbelt webbing.
+          </div>
+          <div class="col-md-6">
+            <h2>Assembly</h2>
+            <p>This jacket features low front pockets, and lining. Everything is
+               assembled with flat-felled seams for durability and to accomodate
+               the stretch mesh fabric.
+          </div>
         </div>
 
         <div class="row">
             <h2>Images</h2>
             <div class="gallery">
-                <div><img src="img/parallel-perspectives/1.JPG" class="img-responsive"></div>
-                <div><img src="img/parallel-perspectives/2.JPG" class="img-responsive"></div>
-                <div><img src="img/parallel-perspectives/3.JPG" class="img-responsive"></div>
-                <div><img src="img/parallel-perspectives/4.JPG" class="img-responsive"></div>
-                <div><img src="img/parallel-perspectives/5.JPG" class="img-responsive"></div>
+                <div><img src="img/pilot-jacket/1.jpg" class="img-responsive"></div>
+                <div><img src="img/pilot-jacket/2.PNG" class="img-responsive"></div>
+                <div><img src="img/pilot-jacket/3.png" class="img-responsive"></div>
+                <div><img src="img/pilot-jacket/4.jpg" class="img-responsive"></div>
+                <div><img src="img/pilot-jacket/5.jpg" class="img-responsive"></div>
+                <div><img src="img/pilot-jacket/6.jpg" class="img-responsive"></div>
           </div>
           </div>
-
-
-      </div>
-    </section>
-    <!-- END section -->
-      <section class="probootstrap-section">
-          <div class="container">
-          <h1>Links</h1>
-          <p><a href="https://www.elmhurstartmuseum.org/exhibitions/luftwerk-parallel-perspectives">Elmhurst Art Museum Page</a> </p>
-          </div>
+        </div>
       </section>
   </div>
 
